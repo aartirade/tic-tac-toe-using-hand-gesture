@@ -87,19 +87,19 @@ lbl.grid(row=0, column=0)
 window.title("XO game")
 turn = 1 
 
-user1 = StringVar()
-user2 = StringVar()
+#user1 = StringVar()
+#user2 = StringVar()
 
-u1_name = Entry(window, textvariable=user1, bd=2)
-u2_name = Entry(window, textvariable=user2, bd=2)
+#u1_name = Entry(window, textvariable=user1, bd=2)
+#u2_name = Entry(window, textvariable=user2, bd=2)
 
-label = Label( window, text="Player 1:", font='Times 12 bold', bg='white', fg='black', height=2, width=6)
-label.grid(row=1, column=0)
-u1_name.grid(row=1,column=0)
+#label = Label( window, text="Player 1:", font='Times 12 bold', bg='white', fg='black', height=2, width=6)
+#label.grid(row=1, column=0)
+#u1_name.grid(row=1,column=0)
 
-label = Label( window, text="Player 2:", font='Times 12 bold', bg='white', fg='black', height=2, width=6)
-label.grid(row=2, column=0)
-u2_name.grid(row=2,column=0)
+#label = Label( window, text="Player 2:", font='Times 12 bold', bg='white', fg='black', height=2, width=6)
+#label.grid(row=2, column=0)
+#u2_name.grid(row=2,column=0)
 
 
 def clickedproccessing():
@@ -280,7 +280,7 @@ def video_stream():
             x2,y2 = lmList[12][1:]
             fingers = detector.fingersUp()
             cv2.rectangle(img, (frameR, frameR), (wCam - frameR, hCam - frameR),(0, 255, 255), 4)
-            cv2.putText(img,"Solo",(frameR, frameR),cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3,cv2.LINE_AA)
+            #cv2.putText(img,"Solo",(frameR, frameR),cv2.FONT_HERSHEY_SIMPLEX,2,(0,255,0),3,cv2.LINE_AA)
   
         
             if fingers[1] == 1 and fingers[2] == 0:
